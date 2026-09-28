@@ -1,0 +1,15 @@
+# Cloudflare Pages configuration (static assets only, no Worker, no database)
+#
+# Deploy with:
+#   CB_STATIC_EXPORT=1 npx next build
+#   npx wrangler pages deploy out --project-name circuitbench
+#
+# Or connect the Git repository in the Cloudflare dashboard and use:
+#   Build command:  CB_STATIC_EXPORT=1 npx next build
+#   Output dir:     out
+
+name = "circuitbench"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "out"
+
+# CircuitBench needs no environment variables and no bindings.
